@@ -1,16 +1,24 @@
-# This is a sample Python script.
+import os
+from google.cloud import language_v1  # Imports the Google Cloud client library
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'C:\Users\ryanl\TextAnalysis\burnished-ember-422919-s5-337e519fbbd2' \
+                                               r'.json '
 
+google_application_credentials = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+# Instantiates a client
+client = language_v1.LanguageServiceClient()
 
+# The text to analyze
+text = "Hello, world!"
+document = language_v1.types.Document(
+    content=text, type=language_v1.types.Document.Type.PLAIN_TEXT
+)
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+# Detects the sentiment of the text
+sentiment = client.analyze_sentiment(
+    request={"document": document}
+).document_sentiment
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print(f"Text: {text}")
+print(f"Sentiment: {sentiment.score}, {sentiment.magnitude}")
