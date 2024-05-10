@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "burnished-ember-422919-s5",
+  "private_key_id": "337e519fbbd259c7f1b5d4316e5f6ed27261b52e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDDZydMuXbUgAqz\nNf71FAznBYQ8KXcq1/ZszSPBGEDxoW3JEFcjMHSOKwZwKKHXHKO4Hk+TK26Q7CGh\np2r28LnBIM9SaflxjUKbrXSm1lp8hsRaZHVcKHxX6RcvOeJZCDPcTWMZ7IcRpxP4\nbJVBwh8et9qCRRUbObRZqIR67sVroOuu3QKQ8U1CZnZeGLbHxDnoDsdqlMZ4lsmZ\nX+taVDL5WavPS2ZkJ7hVUjgH5P8jCoNPV+8HUIXlOr9S+94yRkzhvZHRhXYCVwK3\nAyBL8NjMjJpxOjYYxHgWhoZBx3Jylf58t49WdtUiGBME+Wa/nMWZUE1Nq2pP/dI3\n1vNsV+atAgMBAAECggEAK80r/VImrcBNBbqhHgliUggFyiGmZZt3EREUBnUcG74K\nuNM5oTj7q6G/5fTpwGlaVsuunUgTVxeje1Pm0ZeJIB5tcuUwBhD7ASArAboTmw3v\npm6V8zRdGSy2Jn80eq4wx92uDRHc/itEef/HHnA4Hx/p8qEvN8Th5WY12kO7S+Jo\nj5+NN7c6oXALDYwzCJTB16NR0yQ5BKW2Zvyp5sIbzev0qos+0maGq73NN50g82OW\nd663hCaR3wa8L9JrgcMp4HQoez/1/p7BEGrSTHMSXMYufoB/spQCSvrdXW1WCyPj\nzKAOuSVkwnAmo52SOAXe8VBbaJIoblrOQjGmRO2qeQKBgQDo7s9uiMnmavZYxoDG\ncb6LXcjKDQV9/ybiXkivO4K0nxwE83soVIWDKAw7pDuQNB0RhL3jT8XwiYAnYV1M\nRhD/a+a9tOTC98VRQj71lOPZh5GT3gtpr3xYZLoW49H769YNy7ZeZ3nl05+t4T1A\nHTnO0iqRrLuiqKGIY7S+7R2qqQKBgQDWwOeqoyiTiCSAEr8zzwbzbBxTMFjoNQKb\nYGp8HTcIi0FkeX06RdJ8KlnE97TfUTNMgQEkkHU0rpMC3BDnjysO3UQNEw67LYMy\nKliyhyzfWQu3DYfH0FbmHXZB/lf2rVT5/gRGGSBR3b04yBacn6hpSOv6wV6XY1fM\nmxz7dwRCZQKBgQDKEWlndUjZF89PYhySilgHJLur9DHghLkhxTL+uPyBXkn7TZF4\ngiI0jkhWcPmu9laFPQdRq4GGUnIXN5KtOVdDjUJlLgkJzdGh1XsyphAnREEY6pYx\n/6c6M19vvgEKryNJYoB5UwDfTH+IYw40kWX1skJ1j0hTKkC/ReelfaOvyQKBgAEG\nkNSuzM3Pk6UM8d7UeUsGVChNjc8mGaoWTsvi89VVnO1W6zMxDC1NonofWLzMTXtr\nDk9XZUfoIYmc9XO1qlX61o1dbu+T6xF9REkt/hfe/ABWzzQ0GYYl09/C0Da8YzCC\ndxDCo/XgIjw4MGt1E7/U+lOLQuFkNxIiF4RX8CxFAoGACQBxyZV++wC1zz+DZN0R\nfld84zYijyNmsWRIxL4kHPQJ5kyNyBTfObopKBeKb5ImhOoyryMnAvD8iXSI3Gpq\nhv64ZEE0fI+FbeDApJROPDYjSOzK58eK5A7jMpEB/MKRtcIZjFXvjd8UXWfxW35h\n8YEdMiwpmXL/x6rUUb9g3aY=\n-----END PRIVATE KEY-----\n",
+  "client_email": "textanalysisproject@burnished-ember-422919-s5.iam.gserviceaccount.com",
+  "client_id": "101233916033459670810",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/textanalysisproject%40burnished-ember-422919-s5.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
