@@ -7,7 +7,7 @@
     ### Usage
 
   * Change the config files to the appropriate paths and credentials:
-    
+
   ```python
   class Config:
     GOOGLE_APPLICATION_CREDENTIALS = r'C:\path\to\project\burnished-ember-422919-s5-337e519fbbd2.json'
