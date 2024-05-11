@@ -41,7 +41,8 @@
 * Feature 2 is the most likely classification/genre of the video.
   * This is done by analyzing a document and returning a list of content categories that apply to the text found in the document. Using the API, I found the classification that was determined with the highest confidence.
 
-## API Source
+## API Source: 
+### https://cloud.google.com/python/docs/reference
 
 * This project uses the Google Cloud Natural Language Python API.
   * More specifically the Python Cloud Client library, google-cloud-language. 
