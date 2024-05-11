@@ -1,24 +1,42 @@
 import os
-from google.cloud import language_v1  # Imports the Google Cloud client library
+from config import Config
+from txtFileReader import TextFileReader
+from analysis import TextAnalysis
+from csvWriter import CSVWriter
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'C:\Users\ryanl\TextAnalysis\burnished-ember-422919-s5-337e519fbbd2' \
-                                               r'.json '
+# Use the configuration (config.py) to set environment variables
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = Config.GOOGLE_APPLICATION_CREDENTIALS
 
-google_application_credentials = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
+# Path to data folder
+data_folder = Config.data_folder
 
-# Instantiates a client
-client = language_v1.LanguageServiceClient()
+# List to store the results
+results = []
 
-# The text to analyze
-text = "Hello, world!"
-document = language_v1.types.Document(
-    content=text, type=language_v1.types.Document.Type.PLAIN_TEXT
-)
+# Instantiate analyzer
+analyzer = TextAnalysis()
 
-# Detects the sentiment of the text
-sentiment = client.analyze_sentiment(
-    request={"document": document}
-).document_sentiment
+# Iterate through each text file in the YouTube Data folder
+for filename in os.listdir(data_folder):
+    if filename.endswith(".txt"):
+        file_path = os.path.join(data_folder, filename)
+        text_content = TextFileReader.read_text_file(file_path)
 
-print(f"Text: {text}")
-print(f"Sentiment: {sentiment.score}, {sentiment.magnitude}")
+        # Analyze entities and classification for the current text file:
+
+        # Finds the most common consumer product mentioned
+        entities_output = analyzer.most_common_product(text_content)
+
+        # Classifies the type of content the video is about
+        classification_output = analyzer.classify_content(text_content)
+
+        # Store the results
+        results.append((filename, entities_output, classification_output))
+
+# Write the results to a CSV file using the CSVWriter class
+csv_file_path = Config.csv_file
+CSVWriter.write_results_to_csv(results, csv_file_path)
+
+print(f"Results successfully written to {csv_file_path}")
+
+# Note: if run multiple times, output.csv will be overwritten each time with new results
