@@ -5,7 +5,8 @@ from analysis import TextAnalysis
 from csvWriter import CSVWriter
 
 # Use the configuration (config.py) to set environment variables
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = Config.GOOGLE_APPLICATION_CREDENTIALS
+if not os.getenv('GOOGLE_APPLICATION_CREDENTIALS'):
+    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = Config.GOOGLE_APPLICATION_CREDENTIALS
 
 # Path to data folder
 data_folder = Config.data_folder
