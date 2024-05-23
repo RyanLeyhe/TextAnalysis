@@ -10,7 +10,7 @@
 
   ```python
   class Config:
-    GOOGLE_APPLICATION_CREDENTIALS = r'C:\path\to\project\burnished-ember-422919-s5-337e519fbbd2.json'
+    GOOGLE_APPLICATION_CREDENTIALS = r'C:\path\to\project\project_filename.json'
   
     data_folder = r"C:\path\to\YoutubeData\Youtube Data"
   
